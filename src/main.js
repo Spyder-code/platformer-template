@@ -1,5 +1,8 @@
 import Phaser, { Scale } from 'phaser'
 import MainScene from './MainScene'
+import LevelTwoScene from './LevelTwoScene'
+import LevelThreeScene from './LevelThreeScene'
+import EndScene from './EndScene'
 
 const config = {
 	type: Phaser.AUTO,
@@ -17,7 +20,7 @@ const config = {
 		mode: Scale.ScaleModes.FIT,
 		autoCenter: Scale.Center.CENTER_BOTH,
 	},
-	scene: [MainScene],
+	scene: [MainScene, LevelTwoScene, LevelThreeScene, EndScene],
 }
 
 export default new Phaser.Game(config)
