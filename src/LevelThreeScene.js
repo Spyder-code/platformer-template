@@ -1,17 +1,15 @@
 import Phaser from 'phaser'
 
-export default class MainScene extends Phaser.Scene {
+export default class LevelThreeScene extends Phaser.Scene {
 	
 	constructor() {
-		super('main-scene')
+		super('level-three')
 	}
 
 	init(){
 		this.cursor = this.input.keyboard.createCursorKeys()
 		this.isTouchingGround = false
-		this.level = 1;
-		this.spawnX = 0
-		this.spawnY = 0
+		this.level = 3;
 	}
 
 	preload() {
@@ -155,6 +153,6 @@ export default class MainScene extends Phaser.Scene {
 	}
 
 	finish() {
-		this.scene.start('level-two')
+		this.scene.start('end')
 	}
 }
