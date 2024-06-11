@@ -153,6 +153,10 @@ export default class LevelThreeScene extends Phaser.Scene {
 	}
 
 	finish() {
+<<<<<<< HEAD
 		this.scene.start('end-scene')
+=======
+		this.scene.start('end')
+>>>>>>> 104dc2b454762619c66133b5a5383d7e46a087b0
 	}
 }

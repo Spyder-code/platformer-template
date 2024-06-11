@@ -1,6 +1,7 @@
 export default class EndScene extends Phaser.Scene {
     constructor() {
         super('end-scene')
+<<<<<<< HEAD
     }
     
     create(){
@@ -14,4 +15,7 @@ export default class EndScene extends Phaser.Scene {
         //     this.scene.start('main-scene')
         // })
     }
+=======
+    }   
+>>>>>>> 104dc2b454762619c66133b5a5383d7e46a087b0
 }
